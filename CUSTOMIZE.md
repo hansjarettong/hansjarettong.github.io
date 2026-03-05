@@ -877,6 +877,7 @@ To enable social media previews:
    ```
 
 2. Rebuild your site:
+
    ```bash
    docker compose down && docker compose up
    # or
@@ -1094,7 +1095,7 @@ To update a library:
 
 ## Removing content
 
-Since this template has a lot of content, you may want to remove some of it. The easiest way to achieve this and avoid merge conflicts when updating your code (as [pointed by CheariX ](https://github.com/alshedivat/al-folio/pull/2933#issuecomment-2571271117)) is to add the unwanted files to the `exclude` section in your `_config.yml` file instead of actually deleting them, for example:
+Since this template has a lot of content, you may want to remove some of it. The easiest way to achieve this and avoid merge conflicts when updating your code (as [pointed by CheariX](https://github.com/alshedivat/al-folio/pull/2933#issuecomment-2571271117)) is to add the unwanted files to the `exclude` section in your `_config.yml` file instead of actually deleting them, for example:
 
 ```yml
 exclude:
@@ -1204,7 +1205,7 @@ To add secrets for [lighthouse-badger](https://github.com/alshedivat/al-folio/ac
 
 Also In case you face the error: "Input required and not supplied: token" in the Lighthouse Badger action, this solution resolves it.
 
-### Personal Access Token (fine-grained) Permissions for Lighthouse Badger:
+### Personal Access Token (fine-grained) Permissions for Lighthouse Badger
 
 - **contents**: access: read and write
 - **metadata**: access: read-only
